@@ -1,0 +1,31 @@
+{
+    "name": "bigpulie/behat-test",
+    "description": "Behat BDD test",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "mockery/mockery": "^1.2",
+        "behat/behat": "^3.5",
+        "dmore/chrome-mink-driver": "^2.7",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul",
+            "email": "bigpaulie25ro@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bigpaulie\\behat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "bigpaulie\\behat\\test\\": "test/"
+        }
+    }
+}
