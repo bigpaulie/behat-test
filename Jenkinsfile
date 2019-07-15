@@ -28,7 +28,7 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: 'build/coverage',
-              reportFiles: 'index.html',
+              reportFiles: '*',
               reportName: "Coverage Report"
             ])
         }
