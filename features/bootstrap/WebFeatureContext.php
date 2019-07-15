@@ -22,7 +22,7 @@ class WebFeatureContext extends FeatureContext
     {
         parent::__construct();
         $this->mink = new Behat\Mink\Mink([
-            'browser' => new Session(new ChromeDriver(getenv('behat_host', 'http://localhost:9222'), null, 'http://www.google.com'))
+            'browser' => new Session(new ChromeDriver('http://172.31.45.87:9222', null, 'http://www.google.com'))
         ]);
         $this->mink->setDefaultSessionName('browser');
     }

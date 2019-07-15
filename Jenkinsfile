@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'localhost:5000/jenkins/phpunit:latest'
-      args '-e behat_host=`hostname -i`:9222'
     }
 
   }
