@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Behat') {
         steps {
-          sh './vendor/bin/behat'
+          sh './vendor/bin/behat -f pretty -o std -f junit -o build/reports/behat'
         }
     }
     stage('Publish Coverage') {
