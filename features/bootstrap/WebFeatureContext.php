@@ -33,6 +33,9 @@ class WebFeatureContext extends FeatureContext
     public function iGoToWikipediaHomepage($arg1)
     {
         $this->mink->getSession()->visit($arg1);
+        /** @var ChromeDriver $driver */
+        $driver = $this->mink->getSession()->getDriver();
+        $driver->captureScreenshot(realpath(__DIR__ . '/../../') . '/screenshots/' . time() . '.png');
         return true;
     }
 
@@ -44,6 +47,9 @@ class WebFeatureContext extends FeatureContext
         /** @var \Behat\Mink\Element\DocumentElement $page */
         $page = $this->mink->getSession()->getPage();
         $page->fillField('search', $arg1);
+        /** @var ChromeDriver $driver */
+        $driver = $this->mink->getSession()->getDriver();
+        $driver->captureScreenshot(realpath(__DIR__ . '/../../') . '/screenshots/' . time() . '.png');
     }
 
     /**
