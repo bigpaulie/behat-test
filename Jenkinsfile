@@ -37,7 +37,7 @@ pipeline {
     post {
       always {
         junit 'build/reports/**/*.xml'
-
+        archiveArtifacts artifacts: 'screenshots/*.png', fingerprint: true
       }
 
     }
