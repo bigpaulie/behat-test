@@ -16,6 +16,11 @@ pipeline {
         sh './vendor/bin/phpunit --log-junit build/reports/junit.xml --coverage-html build/coverage'
       }
     }
+    stage('Behat') {
+        steps {
+          sh './vendor/bin/behat'
+        }
+    }
     stage('Publish Coverage') {
       steps {
             publishHTML([
