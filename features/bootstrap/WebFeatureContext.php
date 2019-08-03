@@ -84,4 +84,19 @@ class WebFeatureContext extends FeatureContext
         $driver->captureScreenshot(realpath(__DIR__ . '/../../') . '/screenshots/' . time() . '.png');
         return true;
     }
+
+    /**
+     * @Given I click on :arg1
+     */
+    public function iClickOn($arg1)
+    {
+        $page = $this->mink->getSession()->getPage();
+        /** @var \Behat\Mink\Element\NodeElement|null $element */
+        $element = $page->findLink($arg1);
+        if (empty($element)) {
+            throw new \Exception('Cannot find element ' . $arg1);
+        }
+
+        $element->click();
+    }
 }
