@@ -1,11 +1,14 @@
 pipeline {
-  agent none
+  node {
+    label 'master'
+  }
 
   stages {
     stage('Composer Install') {
       agent {
         dockerfile {
-            filename './docker/phpunit/Dockerfile'
+            filename 'Dockerfile'
+            dir './docker/phpunit'
         }
       }
       steps {
@@ -15,7 +18,8 @@ pipeline {
     stage('PHPUnit') {
       agent {
           dockerfile {
-              filename './docker/phpunit/Dockerfile'
+              filename 'Dockerfile'
+              dir './docker/phpunit'
           }
         }
       steps {
@@ -25,7 +29,8 @@ pipeline {
     stage('Behat') {
         agent {
             dockerfile {
-                filename './docker/behat/Dockerfile'
+                filename 'Dockerfile'
+                dir './docker/behat/'
             }
           }
         steps {
