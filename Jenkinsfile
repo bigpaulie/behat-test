@@ -5,7 +5,7 @@ pipeline {
       agent {
         dockerfile {
             filename 'Dockerfile'
-            dir './docker/phpunit'
+            dir '.docker/phpunit'
         }
       }
       steps {
@@ -16,7 +16,7 @@ pipeline {
       agent {
           dockerfile {
               filename 'Dockerfile'
-              dir './docker/phpunit'
+              dir '.docker/phpunit'
           }
         }
       steps {
@@ -27,7 +27,7 @@ pipeline {
         agent {
             dockerfile {
                 filename 'Dockerfile'
-                dir './docker/behat/'
+                dir '.docker/behat/'
             }
           }
         steps {
