@@ -92,7 +92,10 @@ class WebFeatureContext extends FeatureContext
     {
         $page = $this->mink->getSession()->getPage();
         /** @var \Behat\Mink\Element\NodeElement|null $element */
-        $element = $page->findLink($arg1);
+        $element = $page->find(
+            'xpath',
+            $this->mink->getSession()->getSelectorsHandler()->selectorToXpath('xpath', '*//*[text()="'. $arg1 .'"]')
+        );
         if (empty($element)) {
             throw new \Exception('Cannot find element ' . $arg1);
         }
