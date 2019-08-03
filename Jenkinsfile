@@ -3,7 +3,7 @@ node {
 }
 
 pipeline {
-
+  agent none
   stages {
     stage('Composer Install') {
       agent {
