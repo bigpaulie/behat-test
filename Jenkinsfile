@@ -32,7 +32,7 @@ pipeline {
         agent {
             dockerfile {
                 filename 'Dockerfile'
-                dir '.docker/behat/'
+                dir '.docker/behat'
                 args '-p 9222:9222'
             }
           }
