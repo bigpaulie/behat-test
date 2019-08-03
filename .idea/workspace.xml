@@ -156,7 +156,7 @@
       <workItem from="1563001541195" duration="19558000" />
       <workItem from="1563174341181" duration="33000" />
       <workItem from="1563174387659" duration="9724000" />
-      <workItem from="1564836758642" duration="3165000" />
+      <workItem from="1564836758642" duration="3257000" />
     </task>
     <task id="LOCAL-00001" summary="Adding behat step">
       <created>1563175688542</created>
@@ -305,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564839860907</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Build dockerfiles">
+      <created>1564839929982</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564839929982</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Build dockerfiles">
+      <created>1564839963163</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564839963163</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
