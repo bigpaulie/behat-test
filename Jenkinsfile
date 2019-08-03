@@ -36,6 +36,7 @@ pipeline {
             }
           }
         steps {
+          sh 'ls -la && pwd'
           sh './vendor/bin/behat -f pretty -o std -f junit -o build/reports/behat'
         }
         post {
