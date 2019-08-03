@@ -22,6 +22,11 @@ pipeline {
       steps {
         sh './vendor/bin/phpunit --log-junit build/reports/junit.xml --coverage-html build/coverage'
       }
+      post {
+        always {
+          junit 'build/reports/**/*.xml'
+        }
+      }
     }
     stage('Behat') {
         agent {
@@ -33,8 +38,17 @@ pipeline {
         steps {
           sh './vendor/bin/behat -f pretty -o std -f junit -o build/reports/behat'
         }
+        post {
+          always {
+            junit 'build/reports/**/*.xml'
+            archiveArtifacts artifacts: 'screenshots/*.png', fingerprint: true
+          }
+        }
     }
     stage('Publish Coverage') {
+      agent {
+        label 'master'
+      }
       steps {
             publishHTML([
               allowMissing: false,
@@ -47,11 +61,5 @@ pipeline {
         }
       }
     }
-    post {
-      always {
-        junit 'build/reports/**/*.xml'
-        archiveArtifacts artifacts: 'screenshots/*.png', fingerprint: true
-      }
 
-    }
   }
