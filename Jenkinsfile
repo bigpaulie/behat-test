@@ -17,7 +17,6 @@ pipeline {
           dockerfile {
               filename 'Dockerfile'
               dir '.docker/phpunit'
-              args '-p 9222:9222'
           }
         }
       steps {
@@ -34,6 +33,7 @@ pipeline {
             dockerfile {
                 filename 'Dockerfile'
                 dir '.docker/behat/'
+                args '-p 9222:9222'
             }
           }
         steps {
