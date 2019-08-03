@@ -3,7 +3,7 @@ pipeline {
 
   stages {
     stage('Composer Install') {
-      docker {
+      agent {
         dockerfile {
             filename './docker/phpunit/Dockerfile'
         }
@@ -13,7 +13,7 @@ pipeline {
       }
     }
     stage('PHPUnit') {
-      docker {
+      agent {
           dockerfile {
               filename './docker/phpunit/Dockerfile'
           }
@@ -23,7 +23,7 @@ pipeline {
       }
     }
     stage('Behat') {
-        docker {
+        agent {
             dockerfile {
                 filename './docker/behat/Dockerfile'
             }
