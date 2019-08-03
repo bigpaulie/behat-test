@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d3622e-42f5-41b6-b381-22827b1a2588" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,12 +97,6 @@
       <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
-  </component>
   <component name="ProjectId" id="1OuoHopbMyL6w5oqNhKkrbJDioh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -160,7 +155,7 @@
       <workItem from="1563001541195" duration="19558000" />
       <workItem from="1563174341181" duration="33000" />
       <workItem from="1563174387659" duration="9724000" />
-      <workItem from="1564836758642" duration="8448000" />
+      <workItem from="1564836758642" duration="9656000" />
     </task>
     <task id="LOCAL-00001" summary="Adding behat step">
       <created>1563175688542</created>
@@ -414,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564850982390</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Build dockerfiles">
+      <created>1564851223997</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1564851223997</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">

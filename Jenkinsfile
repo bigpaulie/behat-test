@@ -1,14 +1,9 @@
 pipeline {
-  agent {
-    label 'master'
-  }
-
+  agent any
   stages {
     stage('Behat') {
         agent {
-            docker {
-                image 'jenkins/chromium-php'
-            }
+            label 'chromium-php72'
         }
         steps {
           sh 'composer install'
