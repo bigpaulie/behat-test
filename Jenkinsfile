@@ -36,7 +36,7 @@ pipeline {
             }
           }
         steps {
-          sh 'ls -la && pwd'
+          sh 'ls -la && pwd && php -v && hostname -i && hostname -f'
           sh './vendor/bin/behat -f pretty -o std -f junit -o build/reports/behat'
         }
         post {
