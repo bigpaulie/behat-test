@@ -2,6 +2,8 @@ pipeline {
   agent {
     label 'master'
   }
+
+  stages {
     stage('Behat') {
         agent {
             image 'jenkins/chromium-php'
@@ -18,3 +20,4 @@ pipeline {
         }
     }
   }
+}
