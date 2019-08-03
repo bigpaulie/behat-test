@@ -6,7 +6,9 @@ pipeline {
   stages {
     stage('Behat') {
         agent {
-            image 'jenkins/chromium-php'
+            docker {
+                image 'jenkins/chromium-php'
+            }
         }
         steps {
           sh 'composer install'
