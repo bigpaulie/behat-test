@@ -18,6 +18,11 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JQLSearcherManager">
@@ -156,7 +161,7 @@
       <workItem from="1563001541195" duration="19558000" />
       <workItem from="1563174341181" duration="33000" />
       <workItem from="1563174387659" duration="9724000" />
-      <workItem from="1564836758642" duration="5722000" />
+      <workItem from="1564836758642" duration="7868000" />
     </task>
     <task id="LOCAL-00001" summary="Adding behat step">
       <created>1563175688542</created>
@@ -382,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564842400658</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Build dockerfiles">
+      <created>1564842485802</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564842485802</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
