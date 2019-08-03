@@ -6,5 +6,5 @@ Feature: Search Wikipedia
     Then I should see "Behavior-driven development"
 
   Scenario:
-    Given I click on "Behat"
+    Given I click on "/wiki/Behat_(computer_science)"
     Then I should see "Behat (computer science)"
