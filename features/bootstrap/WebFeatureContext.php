@@ -86,20 +86,35 @@ class WebFeatureContext extends FeatureContext
     }
 
     /**
-     * @Given I click on :arg1
+     * @Given I am on page :arg1
+     */
+    public function iAmOnPage($arg1)
+    {
+        /** @var Session $session */
+        $session = $this->mink->getSession();
+        if ($arg1 !== $session->getCurrentUrl()) {
+            $session->visit($arg1);
+        }
+        $session->wait(1000);
+
+        /** @var ChromeDriver $driver */
+        $driver = $this->mink->getSession()->getDriver();
+        $driver->captureScreenshot(realpath(__DIR__ . '/../../') . '/screenshots/' . time() . '.png');
+        return true;
+    }
+
+    /**
+     * @When I click on :arg1
      */
     public function iClickOn($arg1)
     {
         $page = $this->mink->getSession()->getPage();
-        /** @var \Behat\Mink\Element\NodeElement|null $element */
-        $element = $page->find(
-            'xpath',
-            $this->mink->getSession()->getSelectorsHandler()->selectorToXpath('xpath', '*//*[text()="'. $arg1 .'"]')
-        );
+        $element = $page->findLink($arg1);
         if (empty($element)) {
-            throw new \Exception('Cannot find element ' . $arg1);
+            throw new \Exception('Cannot find element '. $arg1);
         }
 
         $element->click();
+        return true;
     }
 }
