@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9d3622e-42f5-41b6-b381-22827b1a2588" name="Default Changelist" comment="Build dockerfiles">
+    <list default="true" id="b9d3622e-42f5-41b6-b381-22827b1a2588" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/bootstrap/WebFeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/WebFeatureContext.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/web-search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web-search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +29,10 @@
     <searchers>
       <JQLSearcher alias="Assigned to me" jql="assignee = currentUser()" />
     </searchers>
+  </component>
+  <component name="JQLSearcherProjectManager">
+    <selected>-1</selected>
+    <searchers />
   </component>
   <component name="JiraServerManager">
     <selected>-1</selected>
@@ -158,6 +161,7 @@
       <workItem from="1563174341181" duration="33000" />
       <workItem from="1563174387659" duration="9724000" />
       <workItem from="1564836758642" duration="18191000" />
+      <workItem from="1564998607198" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="Adding behat step">
       <created>1563175688542</created>
@@ -453,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564864436063</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Build dockerfiles">
+      <created>1564998619147</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1564998619147</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -496,7 +507,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

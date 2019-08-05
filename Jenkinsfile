@@ -14,6 +14,7 @@ pipeline {
           always {
             junit 'build/reports/**/*.xml'
             archiveArtifacts artifacts: 'screenshots/*.png', fingerprint: true
+            sh 'rm -rf screenshots/*.png'
           }
         }
     }
